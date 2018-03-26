@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>My List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+    <!-- Start Ionic List Component -->
+    <ion-list>
+      <ion-item *ngFor="let item of items">
+        <ion-avatar item-start>
+          <img src="{{item.image}}">
+        </ion-avatar>
+        <h2>{{item.title}}</h2>
+        <p>{{item.subTitle}}</p>
+      </ion-item>
+    </ion-list>
+    <!-- End Ionic List Component -->
+</ion-content>
